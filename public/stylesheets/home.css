@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.home-page-body {
+  background-color: antiquewhite;
+}
+.home-main_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  height: 75vh;
+  width: 100%;
+}
+.home-main_container * {
+  margin: auto;
+}
+
+.home-btn {
+  margin-top: 20px;
+  background-color: #cce7ff;
+}
+
+.home-btn:hover {
+  background-color: #cce7ff;
+}
+
+.home-btn:active {
+  background-color: white;
+}
+
+.home-buttons {
+  display: flex;
+  align-items: center;
+}
