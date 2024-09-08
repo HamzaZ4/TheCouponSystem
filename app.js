@@ -21,17 +21,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.use(express.json());
 app.engine("ejs", ejsMate);
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (req, res) => {
-  res.render("home", { bodyClass: "home-page-body" });
+  res.render("commonPages/home", { bodyClass: "home-page-body" });
 });
 
 app.get("/parent/dashboard", (req, res) => {
   res.render("parent/dashboard", { bodyClass: "dashboard-page-body" });
 });
-
-
 
 app.listen(3000, () => {
   console.log("serving on port 3000");
