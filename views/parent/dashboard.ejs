@@ -1,1 +1,33 @@
-<% layout('./layouts/boilerplate',{bodyClass: 'dashboard-page-body'}) %>
+<% layout('./layouts/boilerplate',{cssFile: 'parentDashboard'}) %>
+
+<h1>Manage children:</h1>
+
+<div class="main-container">
+
+  <div class="childrenGroup" >
+   <div class="childCard">
+    
+    <img class="childImage" src="https://i.fbcd.co/products/resized/resized-750-500/3022-d9c15c13e0c9bcb8483bd747c88e6cc1726409248878b615b33441ca1acb6598.jpg">
+    <div class="container childDetails">
+      <h4><b><%= "Add child" %></b></h4>
+    </div>
+  </div>
+
+<% for( let child of parent.children){ %>
+
+  <div class="childCard">
+    
+    <img class="childImage" src="https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg">
+    <div class="container childDetails">
+      <h4><b><%= child.name %></b></h4>
+      <p><%= child.birthDate %></p>
+    </div>
+
+  </div>
+<% } %>
+
+
+</div>
+
+
+</div>

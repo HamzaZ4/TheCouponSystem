@@ -1,0 +1,29 @@
+.childCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border: 5px solid black;
+  gap: 5px;
+}
+
+.childCard > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25;
+}
+
+.childrenGroup {
+  display: flex;
+  justify-content: left;
+
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.main-container {
+  display: flex;
+  justify-content: flex-end;
+}
